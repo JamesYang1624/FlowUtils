@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'maven-publish'
 }
 
 android {
@@ -41,3 +42,16 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
+
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            release(MavenPublication) {
+//                from components.
+//                groupId = 'com.github.JamesYang1624' //your git id
+//                artifactId = 'FlowUtils' //your-repository
+//                version = '1.0.0' // As same as the Tag
+//            }
+//        }
+//    }
+//}
